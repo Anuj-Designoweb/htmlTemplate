@@ -1,0 +1,18 @@
+{
+    "message": "token verified successfully",
+    "Userinformation": {
+        "data": [
+            {
+                "_id": "5e497e9b71fb5626d8539b70",
+                "Name": "jatin",
+                "email": "jatin@gmail.com",
+                "password": "sdfedfsf",
+                "mobileNumber": 23342423,
+                "ProfilePic": "imageupload_download (1).jpg",
+                "__v": 0
+            }
+         ],
+        "iat": 1581965188,
+        "exp": 1581968788
+    }
+}

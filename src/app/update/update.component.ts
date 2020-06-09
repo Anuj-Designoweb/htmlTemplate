@@ -24,7 +24,7 @@ export class UpdateComponent implements OnInit {
     this.updateForm = this.formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
-      username: ['', Validators.required],
+      Name: ['', Validators.required],
       mobileNumber: ['', [Validators.required, Validators.minLength(6)]]
     
   
@@ -46,11 +46,11 @@ export class UpdateComponent implements OnInit {
         console.log("back email>>>>>" + JSON.stringify(data.email))
         this.updateForm.controls["email"].setValue((data.message.email));
         this.updateForm.controls["password"].setValue(data.message.password);
-        this.updateForm.controls["username"].setValue((data.message.username));
+        this.updateForm.controls["Name"].setValue((data.message.Name));
         this.updateForm.controls["mobileNumber"].setValue((data.message.mobileNumber));
         console.log("show data>>>>" +JSON.stringify((data.message.email)
         ))
-        this.email= Object.assign({},data.email)
+        //this.email= Object.assign({},data.email)
         console.log("back email>>>>>" + JSON.stringify(data.message))
       })  
     
